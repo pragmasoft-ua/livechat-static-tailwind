@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="human">
+      <div
+        class="human-toggle fixed right-4 bottom-4 h-12 w-12 cursor-pointer rounded-full border bg-primary-color p-2 text-white shadow hover:text-opacity-80"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+          />
+        </svg>
+      </div>
+      <div
+        class="human-dialog invisible fixed right-4 bottom-20 flex h-[30rem] w-[20rem] flex-col rounded border border-neutral-200 shadow-lg"
+      >
+        <header
+          class="flex h-12 select-none flex-row items-center justify-between rounded-t bg-primary-color p-2 text-white"
+        >
+          <h3 class="human-title flex-1">👩🏻/human</h3>
+          <span
+            data-close
+            class="cursor-pointer rounded-full bg-white bg-opacity-0 py-2 px-2.5 leading-none hover:bg-opacity-30"
+            >✕</span
+          >
+        </header>
+        <main class="flex-1 overflow-y-auto bg-slate-300/50 p-2">
+          <p data-time="4:20 PM" class="msg in">Hi</p>
+          <p data-time="4:20 PM" class="msg out">
+            Hello<span class="read"></span>
+          </p>
+          <p data-time="4:20 PM" class="msg in">
+            Have you heard about Coding and Stuff
+          </p>
+          <p data-time="4:21 PM" class="msg out">
+            Yeah I know, they post awesome coding tutorials<span
+              class="delivered"
+            ></span>
+          </p>
+          <p data-time="4:21 PM" class="msg in">
+            But did you know they have a youtube channel?
+          </p>
+          <p data-time="4:21 PM" class="msg out">
+            Yeah I also subscribed to their channel<span class="sent"></span>
+          </p>
+        </main>
+        <footer class="flex items-start gap-1 rounded-b p-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6 cursor-pointer opacity-50 hover:opacity-100"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"
+            />
+          </svg>
+
+          <textarea
+            rows="1"
+            placeholder="Type a message"
+            class="max-h-24 min-h-[1.5rem] flex-1 border-none outline-none"
+          ></textarea>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6 cursor-pointer opacity-50 hover:opacity-100"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+            />
+          </svg>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
