@@ -1,5 +1,6 @@
 :root {
   --primary-color: theme(colors.lime.600);
+  color-scheme: light dark;
 }
 
 .human-dialog > main {
@@ -80,7 +81,7 @@
 .in::after,
 .out::after {
   content: attr(data-time);
-  color: theme("colors.neutral.500");
+  opacity: 60%;
   font-size: 0.875rem;
   position: relative;
   margin: 0.25rem;
@@ -114,4 +115,27 @@
 .msg > span.sent::after {
   content: "✓";
   color: theme("colors.neutral.500");
+}
+
+@media (prefers-color-scheme: dark) {
+  .in {
+    background: theme("colors.neutral.800");
+  }
+
+  .out {
+    background: theme("colors.stone.600");
+  }
+
+  .in::before {
+    border-top-color: theme("colors.neutral.800");
+  }
+
+  .out::before {
+    border-top-color: theme("colors.stone.600");
+  }
+
+  .msg > span.delivered::after,
+  .msg > span.sent::after {
+    color: theme("colors.neutral.200");
+  }
 }
