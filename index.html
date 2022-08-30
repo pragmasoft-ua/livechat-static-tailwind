@@ -11,7 +11,7 @@
     <div id="app"></div>
     <div class="human">
       <div
-        class="human-toggle fixed right-4 bottom-4 h-12 w-12 cursor-pointer rounded-full border bg-primary-color p-2 text-white shadow hover:text-opacity-80"
+        class="human-toggle fixed right-4 bottom-4 z-30 h-12 w-12 cursor-pointer rounded-full border bg-primary-color p-2 text-white shadow hover:text-opacity-80"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@
         </svg>
       </div>
       <div
-        class="human-dialog invisible fixed right-4 bottom-20 flex h-[30rem] w-[20rem] flex-col rounded border border-neutral-200 shadow-lg"
+        class="human-dialog invisible fixed right-4 bottom-20 z-40 flex h-[30rem] w-[20rem] flex-col rounded border border-neutral-200 bg-neutral-200 shadow-lg"
       >
         <header
           class="flex h-12 select-none flex-row items-center justify-between rounded-t bg-primary-color p-2 text-white"
@@ -40,7 +40,7 @@
             >✕</span
           >
         </header>
-        <main class="flex-1 overflow-y-auto bg-slate-300/50 p-2">
+        <main class="flex-1 snap-y overflow-y-auto bg-slate-300/50 p-2">
           <p data-time="4:20 PM" class="msg in">Hi</p>
           <p data-time="4:20 PM" class="msg out">
             Hello<span class="read"></span>
@@ -60,7 +60,7 @@
             Yeah I also subscribed to their channel<span class="sent"></span>
           </p>
         </main>
-        <footer class="flex items-start gap-1 rounded-b p-2">
+        <footer class="flex items-start gap-1 rounded-b bg-white p-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -79,7 +79,7 @@
           <textarea
             rows="1"
             placeholder="Type a message"
-            class="max-h-24 min-h-[1.5rem] flex-1 border-none outline-none"
+            class="max-h-24 min-h-[1.5rem] flex-1 resize-y border-none caret-primary-color outline-none"
           ></textarea>
           <svg
             xmlns="http://www.w3.org/2000/svg"

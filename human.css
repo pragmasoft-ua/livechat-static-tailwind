@@ -25,9 +25,26 @@
   border: transparent;
 }
 
+@media (max-width: 22rem) {
+  .human-dialog {
+    width: 98vw;
+    right: 1vw;
+  }
+}
+
+@media (max-height: 35rem) {
+  .human-dialog {
+    height: 98vh;
+    width: 98vw;
+    max-width: 30rem;
+    right: 1vmin;
+    bottom: 1vmin;
+  }
+}
+
 .msg {
   max-width: 80%;
-  @apply relative clear-both my-1.5 block rounded px-2 py-1 text-left shadow;
+  @apply relative clear-both my-1.5 block snap-start scroll-my-1 rounded px-2 py-1 text-left shadow;
 }
 
 .in {

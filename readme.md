@@ -12,10 +12,13 @@ As opposed to **bot**, **/human** is going to provide more "humanistic" user exp
 
 # TODO
 
-- responsive dialog sizing/placement
+- ✅responsive dialog sizing/placement
+- ✅scroll snap
 - dark/light theme
 - custom variables
-- open/close animation
+- open/close animation, hover animation
 - button handlers
 - aria attributes for controls
 - virtual scrolling
+- remember input height
+- sticky dates
